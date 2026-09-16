@@ -1,0 +1,86 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "local-personal-dictionary",
+  "title": "自分辞書",
+  "description": "ローカル用語辞書。LaTeX・画像・CSVと、任意のCodex下書き生成に対応",
+  "icon": "icon.png",
+  "author": "ikisousuke",
+  "license": "MIT",
+  "version": "1.0.0",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "commands": [
+    {
+      "name": "ask-term",
+      "title": "Codexに用語を聞く",
+      "description": "用語の短い説明とLaTeX数式を作り、確認して辞書へ登録します",
+      "mode": "view",
+      "keywords": [
+        "codex",
+        "ask",
+        "AI",
+        "用語",
+        "jisho"
+      ]
+    },
+    {
+      "name": "search",
+      "title": "辞書を引く",
+      "description": "用語、読み、説明から検索します",
+      "mode": "view",
+      "keywords": [
+        "dict",
+        "dictionary",
+        "jisho"
+      ]
+    },
+    {
+      "name": "add",
+      "title": "用語を追加",
+      "description": "用語だけでも保存し、後から説明を追記できます",
+      "mode": "view",
+      "keywords": [
+        "add",
+        "term",
+        "jisho"
+      ]
+    },
+    {
+      "name": "import-csv",
+      "title": "CSVを取り込む",
+      "description": "用語集CSVを確認してから一括追加します",
+      "mode": "view",
+      "keywords": [
+        "import",
+        "csv",
+        "jisho"
+      ]
+    }
+  ],
+  "scripts": {
+    "dev": "ray develop",
+    "build": "ray build -e dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@raycast/api": "2.2.0",
+    "saxes": "6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
