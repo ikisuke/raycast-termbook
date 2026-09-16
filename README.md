@@ -1,4 +1,4 @@
-# 自分辞書
+# Termbook for Raycast
 
 Raycastで呼び出す個人用の用語辞書です。用語、読み（別名）、説明、参考URLをMac内のJSONに保存します。通常の検索・編集はローカルで動作し、常駐サーバーは不要です。任意でCodex CLIによる下書き生成を利用できます。画像URLを入力した場合のみ、保存・プレビュー時に画像を取得します。数式・画像の描画にはRaycast標準機能を使います。
 
@@ -41,9 +41,11 @@ SVGは外部ファイル参照・スクリプト・アニメーションを含�
 
 必要環境: macOS、Raycast、Node.js 22.18以上、npm。
 
-このフォルダで次を実行します。
+リポジトリを取得し、次を実行します。
 
 ```sh
+git clone https://github.com/ikisuke/raycast-termbook.git
+cd raycast-termbook
 npm ci --ignore-scripts
 npm run dev
 ```

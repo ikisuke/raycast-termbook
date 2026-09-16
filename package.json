@@ -82,5 +82,13 @@
   },
   "engines": {
     "node": ">=22.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ikisuke/raycast-termbook.git"
+  },
+  "homepage": "https://github.com/ikisuke/raycast-termbook#readme",
+  "bugs": {
+    "url": "https://github.com/ikisuke/raycast-termbook/issues"
   }
 }
